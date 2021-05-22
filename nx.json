@@ -12,9 +12,17 @@
   "npmScope": "reality-show-manager",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "YmJlNjFiZWEtNzg4Yy00MWUyLWJjNzEtY2VmN2Q2NTQ5NTEwfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -24,7 +32,9 @@
     },
     "reality-e2e": {
       "tags": [],
-      "implicitDependencies": ["reality"]
+      "implicitDependencies": [
+        "reality"
+      ]
     },
     "api": {
       "tags": []
